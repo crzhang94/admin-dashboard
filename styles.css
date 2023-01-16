@@ -204,7 +204,7 @@ h1 {
     display: grid;
     grid-template: 1fr 1fr / 2.5fr 1fr;
     padding: 30px 50px;
-    gap: 30px;
+    gap: 40px;
 }
 
 .projects {
@@ -214,11 +214,21 @@ h1 {
 .project-cards {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 .project-cards h2{
+    font-size: 1.2rem;
+}
+
+.project-cards p {
     font-size: 1.1rem;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1px;
 }
 
 .announcements {
@@ -239,17 +249,31 @@ h1 {
     gap: 10px;
 }
 
-.project-cards div,
+.project-cards .project,
 .announcement-card,
 .trending-card {
     font-size: 0.8rem;
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;;
 }
 
 .project-cards div {
     font-size: 0.9rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.icons {
+    align-self: flex-end;
+}
+
+.icons img:hover {
+    cursor: pointer;
 }
 
 .announcement-card {
@@ -290,4 +314,8 @@ h1 {
 .announcement-card h2,
 .trending h2 {
     font-size: 1rem;
+}
+
+a:hover {
+    cursor: pointer;
 }
