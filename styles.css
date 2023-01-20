@@ -19,6 +19,7 @@ body {
     display: grid;
     gap: 42px;
     padding: 30px 50px;
+
 }
 
 .header-top {
@@ -255,8 +256,14 @@ h1 {
     font-size: 0.8rem;
     background-color: white;
     padding: 30px;
-    border-radius: 10px;;
+    border-radius: 9px;
+    box-shadow: 2px 4px 4px rgb(189, 185, 185);
 }
+
+.project-cards .project {
+    border-left: 9px solid pink;
+}
+
 
 .project-cards div {
     font-size: 0.9rem;
